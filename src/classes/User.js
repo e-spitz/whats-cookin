@@ -1,3 +1,4 @@
+
 class User {
   constructor() {
     this.id = id;
