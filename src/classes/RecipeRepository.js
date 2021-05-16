@@ -1,3 +1,4 @@
+
 class RecipeRepository {
   constructor(recipeData) {
     this.recipeData = recipeData;
@@ -8,7 +9,7 @@ class RecipeRepository {
   }
 
   filterRecipesByIngredients() {
-    
+
   }
 }
 

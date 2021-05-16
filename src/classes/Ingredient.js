@@ -1,3 +1,4 @@
+
 class Ingredient {
   constructor() {
     this.id = id;
