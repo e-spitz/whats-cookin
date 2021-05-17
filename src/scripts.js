@@ -8,7 +8,7 @@ import apiCalls from './apiCalls';
 const homeNavBar = document.querySelector('#homeNavBar');
 const allRecipeNavBar = document.querySelector('#allRecipeNavBar');
 const favoritesNavBar = document.querySelector('#favoritesNavBar');
-const menuRecipeNavBar = document.querySelector('#menuRecipeNavBar');
+const menuNavBar = document.querySelector('#menuNavBar');
 const recipeNavBar = document.querySelector('#recipeNavBar');
 
 // ***** EVENT LISTENERS *****
@@ -27,6 +27,33 @@ function show(elements) {
   elements.forEach(element => {
     element.classList.remove('hidden');
   });
+}
+
+// SHOW & HIDE ITEMS
+
+function showHomeDisplay() {
+  show([homeNavBar]);
+  hide([allRecipeNavBar, favoritesNavBar, menuNavBar, recipeNavBar]);
+}
+
+function showAllRecipesDisplay() {
+  show([allRecipeNavBar]);
+  hide([homeNavBar, favoritesNavBar, menuNavBar, recipeNavBar]);
+}
+
+function showFavoritesDisplay() {
+  show([favoritesNavBar]);
+  hide([homeNavBar, allRecipeNavBar, menuNavBar, recipeNavBar]);
+}
+
+function showMenuDisplay() {
+  show([menuNavBar]);
+  hide([homeNavBar, allRecipeNavBar, favoritesNavBar, recipeNavBar]);
+}
+
+function showRecipeDisplay() {
+  show([recipeNavBar]);
+  hide([homeNavBar, allRecipeNavBar, favoritesNavBar, menuNavBar]);
 }
 
 console.log('Hello world');
