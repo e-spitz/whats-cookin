@@ -1,3 +1,23 @@
-body {
-  background-color: blueviolet;
+/* UTILITY */
+
+ :root {
+  --white: #FFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* IMAGES */
+
+.circle-image {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 200rem;
 }
