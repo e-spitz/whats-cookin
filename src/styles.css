@@ -30,25 +30,33 @@ h1 {
   align: left;
 }
 
-/* TABS */
-
-.tabs {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-}
-
 /* IMAGES */
 
 .circle-image {
   height: 10rem;
   width: 10rem;
   border-radius: 200rem;
+  padding: 1rem;
 }
 
-.gallery {
+.rectangle-image {
+  height: 15rem;
+  width: 15rem;
+  padding: 1rem 1rem 0 1rem;
+}
+
+/* FLEX */
+
+.circle-gallery,
+.rectangle-gallery-row,
+.tabs {
   align-items: center;
   display: flex;
   flex-direction: row;
 }
 
+/* RECIPE CARDS */
+
+.recipe-card {
+  border: 1px solid black;
+}
