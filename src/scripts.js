@@ -6,19 +6,26 @@ import apiCalls from './apiCalls';
 // NAV BARS
 
 const homeNavBar = document.querySelector('#homeNavBar');
-const allRecipeNavBar = document.querySelector('#allRecipeNavBar');
+const browseNavBar = document.querySelector('#browseNavBar');
 const favoritesNavBar = document.querySelector('#favoritesNavBar');
 const menuNavBar = document.querySelector('#menuNavBar');
 const recipeNavBar = document.querySelector('#recipeNavBar');
 
 // TABS
 
-const homeTab = document.querySelector('#homeTab');
-const browseTab = document.querySelector('#browseTab');
-const favoritesTab = document.querySelector('#favoritesTab');
-const menuTab = document.querySelector('#menuTab');
+const homeTabBtn = document.querySelector('#homeTabBtn');
+const browseTabBtn = document.querySelector('#browseTabBtn');
+const favoritesTabBtn = document.querySelector('#favoritesTabBtn');
+const menuTabBtn = document.querySelector('#menuTabBtn');
 
 // ***** EVENT LISTENERS *****
+
+// TABS
+
+homeTabBtn.addEventListener('click', showHomeDisplay);
+browseTabBtn.addEventListener('click', showBrowseDisplay);
+favoritesTabBtn.addEventListener('click', showFavoritesDisplay);
+menuTabBtn.addEventListener('click', showMenuDisplay);
 
 // ***** FUNCTIONS *****
 
@@ -39,28 +46,28 @@ function show(elements) {
 // SHOW & HIDE ITEMS
 
 function showHomeDisplay() {
-  show([homeNavBar, browseTab, favoritesTab, menuTab]);
-  hide([allRecipeNavBar, favoritesNavBar, menuNavBar, recipeNavBar, homeTab]);
+  show([homeNavBar, browseTabBtn, favoritesTabBtn, menuTabBtn]);
+  hide([browseNavBar, favoritesNavBar, menuNavBar, recipeNavBar, homeTabBtn]);
 }
 
-function showAllRecipesDisplay() {
-  show([allRecipeNavBar, homeTab, favoritesTab, menuTab]);
-  hide([homeNavBar, favoritesNavBar, menuNavBar, recipeNavBar, browseTab]);
+function showBrowseDisplay() {
+  show([browseNavBar, homeTabBtn, favoritesTabBtn, menuTabBtn]);
+  hide([homeNavBar, favoritesNavBar, menuNavBar, recipeNavBar, browseTabBtn]);
 }
 
 function showFavoritesDisplay() {
-  show([favoritesNavBar, homeTab, browseTab, menuTab]);
-  hide([homeNavBar, allRecipeNavBar, menuNavBar, recipeNavBar, favoritesTab]);
+  show([favoritesNavBar, homeTabBtn, browseTabBtn, menuTabBtn]);
+  hide([homeNavBar, browseNavBar, menuNavBar, recipeNavBar, favoritesTabBtn]);
 }
 
 function showMenuDisplay() {
-  show([menuNavBar, homeTab, browseTab, favoritesTab]);
-  hide([homeNavBar, allRecipeNavBar, favoritesNavBar, recipeNavBar, menuTab]);
+  show([menuNavBar, homeTabBtn, browseTabBtn, favoritesTabBtn]);
+  hide([homeNavBar, browseNavBar, favoritesNavBar, recipeNavBar, menuTabBtn]);
 }
 
 function showRecipeDisplay() {
-  show([recipeNavBar, homeTab, browseTab, favoritesTab, menuTab]);
-  hide([homeNavBar, allRecipeNavBar, favoritesNavBar, menuNavBar]);
+  show([recipeNavBar, homeTabBtn, browseTabBtn, favoritesTabBtn, menuTabBtn]);
+  hide([homeNavBar, browseNavBar, favoritesNavBar, menuNavBar]);
 }
 
 console.log('Hello world');
