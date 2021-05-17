@@ -36,19 +36,23 @@ h1 {
   height: 10rem;
   width: 10rem;
   border-radius: 200rem;
-  padding: 1rem;
+  /* padding: 1rem; */
+  margin: 0.75rem;
+  background-image: url("https://spoonacular.com/recipeImages/678353-556x370.jpg");
+  border: 0;
 }
 
 .rectangle-image {
   height: 15rem;
   width: 15rem;
   padding: 1rem 1rem 0 1rem;
+  /* margin: 1rem; */
 }
 
 /* FLEX */
 
 .circle-gallery,
-.rectangle-gallery-row,
+.rectangle-gallery,
 .tabs {
   align-items: center;
   display: flex;
