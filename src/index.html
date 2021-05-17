@@ -7,47 +7,95 @@
     <title>Whats Cookin'</title>
   </head>
   <body>
-    <h1>Whats Cookin'</h1>
-    <h2>All Recipes</h2>
-    <!-- <div><<<search bar code>>></div> -->
-    <p>Welcome, username!</p>
-    <section>
-      <h3>Sort By Course</h3>
-<!-- just generic test images below -->
-      <img src="https://spoonacular.com/recipeImages/678353-556x370.jpg" class="circle-image">
-      <p>Appetizer</p>
-      <img src="https://spoonacular.com/recipeImages/678353-556x370.jpg" class="circle-image">
-      <p>Breakfast</p>      
-      <img src="https://spoonacular.com/recipeImages/678353-556x370.jpg" class="circle-image">
-      <p>Lunch</p> 
-      <img src="https://spoonacular.com/recipeImages/678353-556x370.jpg" class="circle-image">
-      <p>Dinner</p> 
-      <img src="https://spoonacular.com/recipeImages/678353-556x370.jpg" class="circle-image">
-      <p>Dessert</p> 
-      <img src="https://spoonacular.com/recipeImages/678353-556x370.jpg" class="circle-image">
-      <p>Side</p> 
+    <section class="nav-bar">
+      <h1>Whats Cookin'</h1>
+      <section class="home-nav-bar">
+        <p>[search bar goes here]</p>
+      </section>
+      <section>
+        <p class="home-nav-bar">Welcome, username!</p>
+      </section>
+      <section class="all-recipe-nav-bar hidden">
+        <h2>All Recipes</h2>
+      </section>
+      <section class="all-recipe-nav-bar hidden">
+        <h2>Your Favorites</h2>
+      </section>
+      <section class="all-recipe-nav-bar hidden">
+        <h2>Your Menu</h2>
+      </section>
+      <section class="all-recipe-nav-bar hidden">
+        <h2>Recipe</h2>
+      </section>
+    </section>
+    <section class="tabs">
+      <p class="hidden">Home</p>
+      <p>Browse</p>
+      <p>Favorites</p>
+      <p>Menu</p>
     </section>
     <section>
+      <section>
+        <h3>Sort By Course</h3>
+        <section class="gallery">
+        <!-- just generic test images below -->
+          <section>
+            <img src="https://spoonacular.com/recipeImages/678353-556x370.jpg" class="circle-image">
+            <p>Appetizer</p>
+          </section>  
+          <section>
+            <img src="https://spoonacular.com/recipeImages/678353-556x370.jpg" class="circle-image">
+            <p>Breakfast</p> 
+          </section>           
+          <section>
+            <img src="https://spoonacular.com/recipeImages/678353-556x370.jpg" class="circle-image">
+            <p>Lunch</p> 
+          </section>  
+          <section>
+            <img src="https://spoonacular.com/recipeImages/678353-556x370.jpg" class="circle-image">
+            <p>Dinner</p> 
+          </section>  
+          <section>
+            <img src="https://spoonacular.com/recipeImages/678353-556x370.jpg" class="circle-image">
+            <p>Dessert</p> 
+          </section>  
+          <section>
+            <img src="https://spoonacular.com/recipeImages/678353-556x370.jpg" class="circle-image">
+            <p>Side</p> 
+          </section> 
+        </section>
       <h3>Chef's Picks</h3>
-<!-- just generic test images below -->
-      <section>
-        <img src="https://spoonacular.com/recipeImages/678353-556x370.jpg" class="circle-image">
-        <!-- <img src="<<<menu-icon-url>>>" class="menu-icon">
-        <img src="<<<favorite-icon-url>>>" class="favorite-icon"> -->
-        <p>Chef's Recipe Name 1</p>
+      <section class="gallery">
+        <!-- just generic test images below -->
+        <section>
+          <img src="https://spoonacular.com/recipeImages/678353-556x370.jpg" class="circle-image">
+          <!-- <img src="<<<menu-icon-url>>>" class="menu-icon">
+          <img src="<<<favorite-icon-url>>>" class="favorite-icon"> -->
+          <p>Chef's Recipe Name 1</p>
+        </section>
+        <section>
+          <img src="https://spoonacular.com/recipeImages/678353-556x370.jpg" class="circle-image">
+          <!-- <img src="<<<menu-icon-url>>>" class="menu-icon">
+          <img src="<<<favorite-icon-url>>>" class="favorite-icon"> -->
+          <p>Chef's Recipe Name 2</p>
+        </section>
+        <section>  
+          <img src="https://spoonacular.com/recipeImages/678353-556x370.jpg" class="circle-image">
+          <!-- <img src="<<<menu-icon-url>>>" class="menu-icon">
+          <img src="<<<favorite-icon-url>>>" class="favorite-icon"> -->
+          <p>Chef's Recipe Name 2</p>
+        </section>
       </section>
-      <section>
-        <img src="https://spoonacular.com/recipeImages/678353-556x370.jpg" class="circle-image">
-        <!-- <img src="<<<menu-icon-url>>>" class="menu-icon">
-        <img src="<<<favorite-icon-url>>>" class="favorite-icon"> -->
-        <p>Chef's Recipe Name 2</p>
-      </section>
-      <section>  
-        <img src="https://spoonacular.com/recipeImages/678353-556x370.jpg" class="circle-image">
-        <!-- <img src="<<<menu-icon-url>>>" class="menu-icon">
-        <img src="<<<favorite-icon-url>>>" class="favorite-icon"> -->
-        <p>Chef's Recipe Name 2</p>
-      </section>
+    </section>
+    <section class="hidden">
+      <img src="https://spoonacular.com/recipeImages/678353-556x370.jpg" class="rectangle-image">
+      <h3>[Recipe Name]</h3>
+      <h4>Ingredients</h4>
+      <p>[Ingredients Here]</p>
+      <h4>Instructions</h4>
+      <p>[Instructions Here]</p>
+      <h4>Cost</h4>
+      <p>[Cost Here]</p>
     </section>
   </body>
   <script src="scripts.js"></script>
