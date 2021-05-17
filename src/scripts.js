@@ -1,5 +1,5 @@
-import './styles.css';
-import apiCalls from './apiCalls';
+// import './styles.css';
+// import apiCalls from './apiCalls';
 
 // ***** QUERY SELECTORS *****
 
@@ -17,6 +17,11 @@ const homeTabBtn = document.querySelector('#homeTabBtn');
 const browseTabBtn = document.querySelector('#browseTabBtn');
 const favoritesTabBtn = document.querySelector('#favoritesTabBtn');
 const menuTabBtn = document.querySelector('#menuTabBtn');
+
+// SECTIONS
+
+const sortByCourseSection = document.querySelector('#sortByCourseSection');
+const recipeSection = document.querySelector('#recipeSection');
 
 // ***** EVENT LISTENERS *****
 
@@ -46,28 +51,28 @@ function show(elements) {
 // SHOW & HIDE ITEMS
 
 function showHomeDisplay() {
-  show([homeNavBar, browseTabBtn, favoritesTabBtn, menuTabBtn]);
+  show([homeNavBar, browseTabBtn, favoritesTabBtn, menuTabBtn, sortByCourseSection]);
   hide([browseNavBar, favoritesNavBar, menuNavBar, recipeNavBar, homeTabBtn]);
 }
 
 function showBrowseDisplay() {
   show([browseNavBar, homeTabBtn, favoritesTabBtn, menuTabBtn]);
-  hide([homeNavBar, favoritesNavBar, menuNavBar, recipeNavBar, browseTabBtn]);
+  hide([homeNavBar, favoritesNavBar, menuNavBar, recipeNavBar, browseTabBtn, sortByCourseSection]);
 }
 
 function showFavoritesDisplay() {
   show([favoritesNavBar, homeTabBtn, browseTabBtn, menuTabBtn]);
-  hide([homeNavBar, browseNavBar, menuNavBar, recipeNavBar, favoritesTabBtn]);
+  hide([homeNavBar, browseNavBar, menuNavBar, recipeNavBar, favoritesTabBtn, sortByCourseSection]);
 }
 
 function showMenuDisplay() {
   show([menuNavBar, homeTabBtn, browseTabBtn, favoritesTabBtn]);
-  hide([homeNavBar, browseNavBar, favoritesNavBar, recipeNavBar, menuTabBtn]);
+  hide([homeNavBar, browseNavBar, favoritesNavBar, recipeNavBar, menuTabBtn, sortByCourseSection]);
 }
 
 function showRecipeDisplay() {
-  show([recipeNavBar, homeTabBtn, browseTabBtn, favoritesTabBtn, menuTabBtn]);
-  hide([homeNavBar, browseNavBar, favoritesNavBar, menuNavBar]);
+  show([recipeNavBar, homeTabBtn, browseTabBtn, favoritesTabBtn, menuTabBtn, recipeSection]);
+  hide([homeNavBar, browseNavBar, favoritesNavBar, menuNavBar, sortByCourseSection]);
 }
 
 console.log('Hello world');
