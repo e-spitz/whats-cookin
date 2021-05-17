@@ -11,6 +11,10 @@ class RecipeRepository {
   filterRecipesByIngredients() {
 
   }
+
+  filterRecipesByName() {
+
+  }
 }
 
 export default RecipeRepository;
