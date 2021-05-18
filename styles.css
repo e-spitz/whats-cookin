@@ -57,6 +57,7 @@ h1 {
   align-items: center;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 /* RECIPE CARDS */

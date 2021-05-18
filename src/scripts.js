@@ -22,8 +22,12 @@ const menuTabBtn = document.querySelector('#menuTabBtn');
 
 const recipeSection = document.querySelector('#recipeSection');
 const rectangleGallerySection = document.querySelector('#rectangleGallerySection');
+const rectangleGallerySectionMore = document.querySelector('#rectangleGallerySectionMore');
 const circleGallerySection = document.querySelector('#circleGallerySection');
 const sortByCourseHeading = document.querySelector('sortByCourseHeading');
+const hiddenRecipeCard = document.querySelector('hiddenRecipeCardg');
+const hiddenImg = document.querySelector('hiddenImg');
+const hiddenRecipeName = document.querySelector('hiddenRecipeName');
 
 // IMAGES
 
@@ -74,32 +78,39 @@ function show(elements) {
 
 function showHomeDisplay() {
   show([homeNavBar, browseTabBtn, favoritesTabBtn, menuTabBtn, sortByCourseHeading, rectangleGallerySection, circleGallerySection]);
-  hide([browseNavBar, favoritesNavBar, menuNavBar, recipeNavBar, homeTabBtn]);
+  hide([browseNavBar, favoritesNavBar, menuNavBar, recipeNavBar, homeTabBtn, rectangleGallerySectionMore, hiddenRecipeCard, hiddenImg, hiddenRecipeName]);
 }
 
 function showBrowseDisplay() {
-  show([browseNavBar, homeTabBtn, favoritesTabBtn, menuTabBtn, rectangleGallerySection]);
+  show([browseNavBar, homeTabBtn, favoritesTabBtn, menuTabBtn, rectangleGallerySection, rectangleGallerySectionMore, hiddenRecipeCard, hiddenImg, hiddenRecipeName]);
   hide([homeNavBar, favoritesNavBar, menuNavBar, recipeNavBar, browseTabBtn, sortByCourseHeading, circleGallerySection]);
 }
 
 function showFavoritesDisplay() {
-  show([favoritesNavBar, homeTabBtn, browseTabBtn, menuTabBtn, rectangleGallerySection]);
+  show([favoritesNavBar, homeTabBtn, browseTabBtn, menuTabBtn, rectangleGallerySection, rectangleGallerySectionMore, hiddenRecipeCard, hiddenImg, hiddenRecipeName]);
   hide([homeNavBar, browseNavBar, menuNavBar, recipeNavBar, favoritesTabBtn, sortByCourseHeading, circleGallerySection]);
 }
 
 function showMenuDisplay() {
-  show([menuNavBar, homeTabBtn, browseTabBtn, favoritesTabBtn, rectangleGallerySection]);
+  show([menuNavBar, homeTabBtn, browseTabBtn, favoritesTabBtn, rectangleGallerySection, rectangleGallerySectionMore, hiddenRecipeCard, hiddenImg, hiddenRecipeName, recipeNavBar]);
   hide([homeNavBar, browseNavBar, favoritesNavBar, recipeNavBar, menuTabBtn, sortByCourseHeading, circleGallerySection]);
 }
 
 function showRecipeDisplay() {
-  show([recipeNavBar, homeTabBtn, browseTabBtn, favoritesTabBtn, menuTabBtn, recipeSection]);
+  show([recipeNavBar, homeTabBtn, browseTabBtn, favoritesTabBtn, menuTabBtn, recipeSection, rectangleGallerySectionMore, hiddenRecipeCard]);
   hide([homeNavBar, browseNavBar, favoritesNavBar, menuNavBar, sortByCourseHeading, circleGallerySection, rectangleGallerySection]);
 }
 
 function showRectangleGalleryDisplay() {
-  show([homeTabBtn, browseTabBtn, favoritesTabBtn, menuTabBtn, rectangleGallerySection]);
+  show([homeTabBtn, browseTabBtn, favoritesTabBtn, menuTabBtn, rectangleGallerySection, rectangleGallerySectionMore, hiddenRecipeCard, hiddenImg, hiddenRecipeName, recipeNavBar]);
   hide([homeNavBar, browseNavBar, favoritesNavBar, menuNavBar, sortByCourseHeading, circleGallerySection, recipeSection]);
 }
+
+
+
+
+
+
+
 
 console.log('Hello world');
