@@ -1,3 +1,7 @@
+---
+permalink: /index.html
+---
+
 # What's Cookin'? Starter Kit 
 
 The details of this project are outlined in the <a href="https://frontend.turing.io/projects/whats-cookin.html" target="\__blank">project spec</a>.
