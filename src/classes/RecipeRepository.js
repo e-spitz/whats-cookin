@@ -26,14 +26,15 @@ class RecipeRepository {
   //     // this function will hide recipes based on a hide function in scripts.js
   // }
 
-//   filterRecipesByName(recipeName) {
-//     // hide all recipes that don't have a certain name
-//       // ingredients are here: this.recipeData.tags.name
-//     if (
-//       // this.filterRecipesByName() is called via a nameButton being clicked
-//     ) {
-//       hideRecipesWithoutName(recipeName);
-//   }
-// }
+  //   filterRecipesByName(recipeName) {
+  //     // hide all recipes that don't have a certain name
+  //       // ingredients are here: this.recipeData.tags.name
+  //     if (
+  //       // this.filterRecipesByName() is called via a nameButton being clicked
+  //     ) {
+  //       hideRecipesWithoutName(recipeName);
+  //   }
+  // }
+}
 
 export default RecipeRepository;

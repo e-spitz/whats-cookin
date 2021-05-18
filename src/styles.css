@@ -1,3 +1,66 @@
-body {
-  background-color: blueviolet;
+/* UTILITY */
+
+ :root {
+  --white: #FFF;
+  --black: rgb(0, 0, 0);
+  --teal:  rgb(115, 182, 167);
+}
+
+* {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* NAV BAR */
+
+.nav-bar {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  background: rgb(115, 182, 167);
+  color: var(--white);
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+h1 {
+  align: left;
+}
+
+/* IMAGES */
+
+.circle-image {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 200rem;
+  /* padding: 1rem; */
+  margin: 0.75rem;
+  background-image: url("https://spoonacular.com/recipeImages/678353-556x370.jpg");
+  border: 0;
+}
+
+.rectangle-image {
+  height: 15rem;
+  width: 15rem;
+  padding: 1rem 1rem 0 1rem;
+  /* margin: 1rem; */
+}
+
+/* FLEX */
+
+.circle-gallery,
+.rectangle-gallery,
+.tabs {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+/* RECIPE CARDS */
+
+.recipe-card {
+  border: 1px solid black;
 }
