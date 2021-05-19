@@ -28,6 +28,6 @@ class Recipe {
 //   // ^^ we need to reference that somewhere
 //   return instructions;
 //   }
-// }
+}
 
-module.exports = Recipe;
+export default Recipe;
