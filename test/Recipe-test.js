@@ -56,17 +56,23 @@ describe('Recipe', () => {
       ]
     });
   });
-  
+
   it('Should be a function', () => {
     expect(Recipe).to.be.a('function');
   });
 
-  it.skip('should be an instance of Recipe'), () => {
+  it('should be an instance of Recipe', () => {
     expect(recipe).to.be.an.instanceof(Recipe);
-  }
-  it.skip('should determine ingredients'), () => {
-    // expect(recipe.determineIngredients().to.equal(______);
-  }
+  });
+
+  it('should have an id', () => {
+    expect(recipe.id).to.deep.equal(595736);
+  });
+
+  it('should have an image', () => {
+    expect(recipe.image).to.equal("https://spoonacular.com/recipeImages/595736-556x370.jpg");
+  });
+  
   it.skip('should calculate ingredients by cost'), () => {
     // expect(calculateIngredientCost().to.equal(______);
   }
