@@ -5,14 +5,14 @@ class RecipeRepository {
 
   // filterRecipesByTag(recipeTag) {
   //   // hide all recipes that don't have a certain tag
-  //     // tags are here: this.recipeData.tags.tagName
-  //   if (
-  //     // this.filterRecipesByTag() is called is called via a tagButton being clicked
-  //   ) {
-  //     hideRecipesWithoutTag(recipeTag);
-  //     // ^^ function in dom manipulation file: scripts.js
-  //       // this function will hide recipes based on a hide function in scripts.js
-  //   }
+  //   //   // tags are here: this.recipeData.tags.tagName
+  //   // if (
+  //   //   // this.filterRecipesByTag() is called is called via a tagButton being clicked
+  //   // ) {
+  //   //   hideRecipesWithoutTag(recipeTag);
+  //   //   // ^^ function in dom manipulation file: scripts.js
+  //   //     // this function will hide recipes based on a hide function in scripts.js
+  //   // }
   // }
 
   // filterRecipesByIngredient(recipeIngredient) {

@@ -1,4 +1,3 @@
-
 class User {
   constructor() {
     this.id = id;
@@ -29,4 +28,4 @@ class User {
   }
 }
 
-module.exports = User;
+export default User;

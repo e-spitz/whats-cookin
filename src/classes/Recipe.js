@@ -1,12 +1,13 @@
 class Recipe {
-  constructor() {
-    this.id = id;
-    this.image = image;
-    this.ingredients = ingredients;
-    this.instructions = instructions;
-    this.name = name;
-    this.tags = tags;
+  constructor(recipe) {
+    this.id = recipe.id;
+    this.image = recipe.image;
+    this.ingredients = recipe.ingredients;
+    this.instructions = recipe.instructions;
+    this.name = recipe.name;
+    this.tags = recipe.tags;
   }
+}
 
   // determineIngredients(recipeID) {
   // // there needs to be a lot but, but this should be the last line
@@ -30,4 +31,4 @@ class Recipe {
 //   }
 // }
 
-module.exports = Recipe;
+export default Recipe;
