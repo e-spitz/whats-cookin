@@ -16,8 +16,10 @@ class Recipe {
     const newIng = ingData.map(item => {
       return new Ingredient(item);
     });
+    // console.log(newIng); creating new ingredient instances for all ingredients
     this.ingredients.forEach(ingredient => {
       let foundIng = (newIng.find(ing => ing.id === ingredient.id));
+      // console.log(foundIng);
       ingredient.name = foundIng.name;
       ingredient.estimatedCostInCents = foundIng.estimatedCostInCents;
     });
@@ -28,6 +30,7 @@ class Recipe {
     let matchIng = this.ingredients.map(ingredient => {
       return ingredient.name;
     });
+    // console.log(matchIng);
     return matchIng;
   }
 
